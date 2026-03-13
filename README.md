@@ -9,7 +9,7 @@ To use this repo you can tap it with
 brew tap ScienceGuns/homebrew-taps
 ```  
 
-List the tools we have availalbe via
+List the tools we have available via
 ```bash
 brew tap-info ScienceGuns/taps --json | jq -r '.[]|(.formula_names[],.cask_tokens[])'
 ```

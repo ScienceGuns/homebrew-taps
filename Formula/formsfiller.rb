@@ -5,13 +5,13 @@
 class Formsfiller < Formula
   desc "Generate various ATF eForms PDFs using templated data to save time and effort"
   homepage "https://scienceguns.com"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ScienceGuns/FormsFiller/releases/download/0.1.0/formsfiller_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5194c09be01f83f8d7b007eceda6a2519b43221a72370974bd0621ab9266d520"
+      url "https://github.com/ScienceGuns/FormsFiller/releases/download/0.2.0/formsfiller_0.2.0_darwin_arm64.tar.gz"
+      sha256 "2c93c081afb88e3ad0ac7dbfd55848ac26234494fd7b60a1d2bd807abba92149"
 
       define_method(:install) do
         bin.install "formsfiller"
@@ -21,8 +21,8 @@ class Formsfiller < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ScienceGuns/FormsFiller/releases/download/0.1.0/formsfiller_0.1.0_linux_amd64.tar.gz"
-      sha256 "73ebd5971d402104d5cc50e669f5a41032b28ea95fe66a959e4e59cb774e80a2"
+      url "https://github.com/ScienceGuns/FormsFiller/releases/download/0.2.0/formsfiller_0.2.0_linux_amd64.tar.gz"
+      sha256 "0030d6120b52066dbc97358d2af629cefa8abbcc14ce2793cf68aa4c33b6a94f"
       define_method(:install) do
         bin.install "formsfiller"
       end
